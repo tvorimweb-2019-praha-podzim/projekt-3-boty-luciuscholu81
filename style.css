@@ -1,9 +1,157 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
 
 body {
     text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    }
+
+.zbozi {
+    display: flex;
+    justify-content: center;
+    width: 670px;
+    height: 440px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.detaily {
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+}
+
+.vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    border-radius: 15px 0 0 15px;
+}
+
+.logo {
+    position: relative;
+    margin: 30px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.bota {
+    position: relative;
+    left: 0;
+    margin-left: -80px;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -80px;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.velikosti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.vybrana {
+    color: #f15f42;
+    border: solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.produkt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+.popis {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: solid #06d7c1;
+    padding-bottom: 30px;
+}
+
+.parametr {
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.velikosti {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.akce {
+    background-color: #f15f42;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.tlacitko {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /*
